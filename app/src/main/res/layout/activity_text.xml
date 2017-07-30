@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/plaintext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Plaintext"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/encrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Encrypt"
+            android:drawableLeft="@drawable/ic_lock_closed"
+            android:drawablePadding="10dp"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/decrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Decrypt"
+            android:drawableLeft="@drawable/ic_lock_open"
+            android:drawablePadding="10dp"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ciphertext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Ciphertext"/>
+
+</LinearLayout>

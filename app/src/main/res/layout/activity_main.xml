@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/files"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Files"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/text"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Text"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:onClick="onClick" />
+
+</LinearLayout>
