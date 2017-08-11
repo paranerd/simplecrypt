@@ -1,4 +1,4 @@
-package org.simpledrive.simplecrypt.activities;
+package org.simplecrypt.activities;
 
 import android.app.AlertDialog;
 import android.content.ClipData;
@@ -13,9 +13,9 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import org.simpledrive.simplecrypt.R;
-import org.simpledrive.simplecrypt.utils.Crypto;
-import org.simpledrive.simplecrypt.utils.Util;
+import org.simplecrypt.R;
+import org.simplecrypt.utils.Crypto;
+import org.simplecrypt.utils.Util;
 
 import java.util.ArrayList;
 
@@ -72,15 +72,25 @@ public class Files extends AppCompatActivity {
     }
 
     private void encrypt(String secret, boolean sign, boolean encryptFilename) {
+        int count = 0;
         for (int i = 0; i < paths.size(); i++) {
-            Crypto.encryptFile(paths.get(i), secret, sign, encryptFilename);
+            if (!Crypto.encryptFile(paths.get(i), secret, sign, encryptFilename).equals("")) {
+                count++;
+            }
         }
+
+        Toast.makeText(Files.this, count + " file(s) successfully decrypted", Toast.LENGTH_SHORT).show();
     }
 
     private void decrypt(String secret, boolean decryptFilename) {
+        int count = 0;
         for (int i = 0; i < paths.size(); i++) {
-            Crypto.decryptFile(paths.get(i), secret, decryptFilename);
+            if (!Crypto.decryptFile(paths.get(i), secret, decryptFilename).equals("")) {
+                count++;
+            }
         }
+
+        Toast.makeText(Files.this, count + " file(s) successfully decrypted", Toast.LENGTH_SHORT).show();
     }
 
     private void showEncrypt() {

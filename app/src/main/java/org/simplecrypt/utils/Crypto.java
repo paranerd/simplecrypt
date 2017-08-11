@@ -1,4 +1,4 @@
-package org.simpledrive.simplecrypt.utils;
+package org.simplecrypt.utils;
 
 import android.util.Base64;
 

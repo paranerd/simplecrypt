@@ -1,4 +1,4 @@
-package org.simpledrive.simplecrypt.activities;
+package org.simplecrypt.activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -9,9 +9,9 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import org.simpledrive.simplecrypt.R;
-import org.simpledrive.simplecrypt.utils.Util;
-import org.simpledrive.simplecrypt.utils.Crypto;
+import org.simplecrypt.R;
+import org.simplecrypt.utils.Util;
+import org.simplecrypt.utils.Crypto;
 
 public class Text extends AppCompatActivity {
     private EditText plaintext;

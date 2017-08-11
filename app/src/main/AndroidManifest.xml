@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.simpledrive.simplecrypt">
+    package="org.simplecrypt">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -21,11 +21,11 @@
         </activity>
 
         <activity
-            android:label="Files"
+            android:label="Encrypt/Decrypt Files"
             android:name=".activities.Files" />
 
         <activity
-            android:label="@string/app_name"
+            android:label="Encrypt/Decrypt Text"
             android:name=".activities.Text" />
     </application>
 

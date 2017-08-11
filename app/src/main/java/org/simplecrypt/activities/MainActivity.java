@@ -1,11 +1,11 @@
-package org.simpledrive.simplecrypt.activities;
+package org.simplecrypt.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import org.simpledrive.simplecrypt.R;
+import org.simplecrypt.R;
 
 public class MainActivity extends AppCompatActivity {
 
